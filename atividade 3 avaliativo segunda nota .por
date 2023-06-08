@@ -1,19 +1,18 @@
-programa{     //laço de repetição enquanto //
-	
-	inteiro i = 0
-	inteiro nota, multiplicacao = 1
-	
+programa{
+	inteiro valor, i, maior	 
 	funcao inicio(){
-	
-		enquanto(i <= 2){
+		
+		para(i = 0; i <= 6; i++){
+			escreva("Digite 7 valores \n")
+			leia(valor)
 
-			escreva("Digite sua nota" + i + "\n")
-			leia(nota)
-			multiplicacao *= nota 
-			
-				i++ 
+			se(i == 1){
+				maior = valor
+			}senao se(valor > maior){
+				maior = valor		
+			}
 		}
-		escreva("A multiplicacao é " + multiplicacao)
+		escreva("Maior valor é " + maior + "\n")		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +20,7 @@ programa{     //laço de repetição enquanto //
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 289; 
+ * @POSICAO-CURSOR = 276; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

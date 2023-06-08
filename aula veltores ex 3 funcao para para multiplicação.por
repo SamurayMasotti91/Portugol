@@ -1,27 +1,29 @@
-programa{     //laço de repetição enquanto //
+programa{
 	
-	inteiro i = 0
-	inteiro nota, multiplicacao = 1
+	real vetor[4]
+	inteiro i
+	real resultado = 0.0
 	
 	funcao inicio(){
-	
-		enquanto(i <= 2){
 
-			escreva("Digite sua nota" + i + "\n")
-			leia(nota)
-			multiplicacao *= nota 
-			
-				i++ 
+		para(i = 0; i <=3 ; i++){
+			escreva("digite os valores \n")
+				leia(vetor[i])
 		}
-		escreva("A multiplicacao é " + multiplicacao)
+		para(i = 0; i <=3 ; i++){
+			escreva("digite os valores \n")
+				resultado += vetor[i]*2
+		}
+		escreva("total da multiplicação é \n" , resultado , "\n")		
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 289; 
+ * @POSICAO-CURSOR = 79; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
